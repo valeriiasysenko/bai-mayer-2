@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeiMayer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <header class="header-page">
+        <div class="container header-container  ">
+            <nav class="navigation">
+                <a class="link-logo header-logo" href="./index.html">Bei<span class="text-logo">Mayer</span></a>
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a class="navigation-link active" href="#next-section">О нас</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="">Услуги</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <address class="contacts">
+                <ul class="contacts-list">
+                    <li class="contacts-item"><a class="contacts-link" href="mailto:nikolajbajtemirov657@gmail.com">nikolajbajtemirov657@gmail.com</a></li>
+                    <li class="contacts-item"><a class="contacts-link" href="tel:+4917655200818">+4917655200818</a></li>
+                    <li class="contacts-item"><a class="contacts-link" href="tel:+491639857072">+491639857072</a></li>
+                </ul>
+            </address>
+            <button class="burger-btn" type="button" data-menu-open>
+                <svg class="burger-icon" width="24" height="24"><use href="./images/icons.svg#icon-heroicons-solid_menu"></use></svg>
+            </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu-container container">
+                <button class="mobile-menu-close" type="button" data-menu-close><svg class="icon-menu-close" width="8" height="8"><use href="./images/icons.svg#icon-close-black"></use></svg></button>
+                <nav class="mobile-menu-navigation">
+                    <ul class="mobile-menu-navigation-list">
+                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link active-menu" href="#next-section">O нас</a></li>
+                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link" href="">Услуги</a></li>
+                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <address class="mobile-menu-contacts">
+                    <ul class="mobile-menu-contacts-list">
+                        <li class="mobile-menu-contacts-item"><a class="mobile-menu-contacts-link active-link" href="tel:+4917655200818">+4917655200818</a></li>
+                        <li class="mobile-menu-contacts-item"><a class="mobile-menu-contacts-link active-link" href="tel:+491639857072">+491639857072</a></li>
+                        <li class="mobile-menu-contacts-email"><a class="mobile-menu-contacts-link" href="mailto:nikolajbajtemirov657@gmail.com">nikolajbajtemirov657@gmail.com</a></li>
+                    </ul>
+                    <!-- <ul class="mobile-menu-icon-list">
+                        <li class="mobile-menu-icon-item">
+                            <a class="mobile-menu-icon-link" href=""><svg class="mobile-icon" width="24" height="24"><use href="./images/icons.svg#icon-instagram-icon"></use></svg></a>
+                        </li>
+                        <li  class="mobile-menu-icon-item">
+                            <a class="mobile-menu-icon-link" href=""><svg class="mobile-icon" width="24" height="24"><use href="./images/icons.svg#icon-twitter-icon"></use></svg></a>
+                        </li>
+                        <li class="mobile-menu-icon-item"><a class="mobile-menu-icon-link" href=""><svg class="mobile-icon" width="24" height="24"><use href="./images/icons.svg#icon-facebook-icon"></use></svg></a>
+                        </li>
+                        <li class="mobile-menu-icon-item"><a class="mobile-menu-icon-link" href=""><svg class="mobile-icon" width="24" height="24"><use href="./images/icons.svg#icon-linkedin-icon"></use></svg></a></li>
+                    </ul> -->
+                </address>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-first ">
+            <div class="container">
+                <h1 class="page-title"><span class="title-logo">Bei</span>Mayer</h1>
+                <p class="title-text">Переезды и транспортные услуги по Европе и СНГ</p>
+                <a href="#next-section" class="scroll-down"></a>
+            </div>
+        </section>
+        <section class="about-us" id="next-section">
+            <div class="container about-us-container">
+               <div class="about-us-case">
+                    <h2 class="about-us-title" >О нашей компании</h2>
+                    <p class="about-us-text">Мы-транспортная компания <span class="about-us-logo">Bei</span>Mayer, базирующаяся в Штутгарте. Предлагаем надежные и удобные переезды,транспортировку автомобилей и дополнительные услуги по всей Европе и странам СНГ. Мы говорим на русском и немецком языках, что делает процесс организации переезда и доставки еще проще для наших клиентов.</p>
+               </div>
+                <img class="picture-about-us" alt="Truck" src="./images/img-logo-picture-1x.jpg"/>
+            </div>
+        </section>
+        <section class="section-quality section ">
+            <div class="container">
+                <h2 class="title-service">Наши услуги</h2>
+                <div class="section-quality-wrapper">
+                    <ul class="section-quality-list">
+                        <li class="section-quality-item">
+                            <div class="container-icon"><svg class="quality-item-icon" width="48" height="48"><use href="./images/symbol-defs.svg#icon-office"></use></svg></div>
+                            <h3 class="section-quality-subtitle">Квартирные и офисные переезды</h3>
+                            <ul class="list-services">
+                                <li class="list-item-services"><p class="item-text-service">Бережная упоковка вещей</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Разборка и сборка мебели</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Доставка до нового адреса</p></li>
+                            </ul>
+                        </li>
+                        <li class="section-quality-item">
+                            <div class="container-icon"><svg class="quality-item-icon" width="48" height="48"><use href="./images/symbol-defs.svg#icon-earth"></use></svg></div>
+                            <h3 class="section-quality-subtitle">Международные переезды</h3>
+                            <ul class="list-services">
+                                <li class="list-item-services"><p class="item-text-service">Оформление всех необходимых документов</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Оптимальные маршруты и сроки доставки</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Полный контроль на каждом этапе</p></li>
+                            </ul>
+                        </li>
+                        <li class="section-quality-item">
+                            <div class="container-icon"><svg class="quality-item-icon" width="48" height="48"><use href="./images/symbol-defs.svg#icon-truck"></use></svg></div>
+                            <h3 class="section-quality-subtitle">Грузоперевозки</h3>
+                            <ul class="list-services">
+                                <li class="list-item-services"><p class="item-text-service">Перевозка бытовой техники, мебели, личных вещей</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Доставка грузов для бизнеса</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Работаем с частными и корпоративными клиентами</p></li>
+                            </ul>
+                        </li>
+                        <li class="section-quality-item">
+                            <div class="container-icon"><svg class="quality-item-icon" width="48" height="48"><use href="./images/symbol-defs.svg#icon-location2"></use></svg></div>
+                            <h3 class="section-quality-subtitle">Транспортировка автомобилей</h3>
+                            <ul class="list-services">
+                                <li class="list-item-services"><p class="item-text-service">Доставка машин по всей Европе</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Перевозка с помощью прицепа</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Надежная и безопасная транспортировка</p></li>
+                            </ul>
+                        </li>
+                        <li class="section-quality-item">
+                            <div class="container-icon"><svg class="quality-item-icon" width="48" height="48"><use href="./images/symbol-defs.svg#icon-paint-format"></use></svg></div>
+                            <h3 class="section-quality-subtitle">Малярные работы</h3>
+                            <ul class="list-services">
+                                <li class="list-item-services"><p class="item-text-service">Покраска различных поверхностей</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Восстановление и обновление интерьеров</p></li>
+                                <li class="list-item-services"><p class="item-text-service">Качественные материалы и профессиональный подход</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/hidden.js"></script>
+</body>
+</html>
