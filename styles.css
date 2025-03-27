@@ -237,14 +237,16 @@ input {
     width: 100%;
     top: 0;
     left: 0;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-color: #fff;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 999;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-menu.is-open{
+.mobile-menu.active{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -414,7 +416,7 @@ input {
 }
 
 .title-logo{
-    color:  #588fb1; 
+    color: #075b8f; 
 }
 .title-text{
     font-family: "Roboto", sans-serif;
@@ -427,12 +429,14 @@ input {
     text-align: center;
 }
 .scroll-down {
-    display: block;
+    display: block !important;
     width: 40px;
     height: 40px;
     margin: 20px auto;
     position: relative;
+    z-index: 900;
     animation: bounce 1.5s infinite;
+    
 }
 .scroll-down::after {
     content: "";
@@ -446,7 +450,7 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    border-color: #588fb1;
+    border-color: #fff;
 }
 
 .scroll-down:hover::after {
@@ -773,114 +777,239 @@ input {
         font-weight: 400;
     }
 }
-/*------------------------------Section-portfolio----------------*/
-.section-portfolio {
+
+/*------------------------------Section-Why-BaiMayer----------------*/
+.why-baimayer-section {
     max-width: 320px;
     padding-top: 96px;
     padding-bottom: 96px;
     margin: 0 auto;
 }
-.portfolio-text-hover{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    position: absolute;
-    background-color: #4d5ae5;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 40px 32px;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.container {
 }
-.portfolio-container-image{
-    position: relative;
-    overflow: hidden;
-
-}
-.portfolio-item:hover .portfolio-text-hover{
-    transform: translateY(0);
-}
-.portfolio-item:hover{
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-
-}
-.portfolio-title {
+.why-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    text-transform: capitalize;
-    margin-bottom: 72px;
+    margin-bottom: 34px;
     margin-left: auto;
     margin-right: auto;
+   
 }
-.portfolio-list {
+.text-logo {
+}
+.list-why-baimayer {
+   
+}
+.item-why-baimayer {
     display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
+    gap: 12px;
+    margin-bottom: 12px;
 }
-.portfolio-container{
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+.icon-check {
+    fill: #04466e;
 }
-.portfolio-item {
-    width: 100%;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-subtitle {
+.why-baimayer-text {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
+    color: #434455;
+    text-align: left;
 }
-.portfolio-text {
+.wrappers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #fff;
+}
+.containers {
+    position: relative;
+    width: 600px;
+}
+.road {
+    width: 100%;
+}
+.truck {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    animation: moveTruck 5s linear infinite;
+    margin-top: -150px;
+    
+}
+@keyframes moveTruck {
+    0% {
+        transform: translate(0, 0);
+    }
+    /* 25% {
+        transform: translate(0px, -0px);
+    }
+    50% {
+        transform: translate(0px, 0);
+    } */
+    100% {
+        transform: translate(60px, 30px);
+    }
+    /* 100% {
+        transform: translate(0px, 0);
+    } */
+}
+.location {
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    width: 15px;
+    height: 15px;
+    /* background-color: red; */
+    border-radius: 50%;
+    animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+}
+/*---------------------------Footer-------------------*/
+.footer {
+    background:  #021e30;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin: 0 auto;
+}
+.container-footer {
+}
+.container {
+}
+.container-link-logo {
+}
+.footer-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#075b8f;
+    display: block;
+    margin-bottom: 16px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.footer-logo {
+    color: #f4f4fd;
+}
+
+.footer-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #f4f4fd;
+    min-width: 264px;
+    text-align: center;
+    margin-bottom: 72px;
 }
-/*----------------Tablet-----------------------------------------*/
-@media screen and (min-width: 768px) {
-    .section-portfolio {
-        max-width: 768px;
-    }
-    .portfolio-list {
-        row-gap: 72px;
-        column-gap: 24px;
-    }
-    .portfolio-item {
-        flex-basis: calc((100% - 24px) / 2);
-    }
+.footer-container-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-/*----------------------------Dekstop----------------------------------*/
-@media screen and (min-width: 1158px) {
-    .section-portfolio {
-       max-width: 1440px;
-       padding-top: 120px;
-       padding-bottom: 120px;
-       margin: 0 auto;
-    }
-    .wrapper-portfolio {
-        max-width: 1128px;
-        padding: 0;
-    }
-    .portfolio-list{
-        row-gap: 48px;
-        column-gap: 24px;
-    }
-    .portfolio-item {
-        flex-basis: calc((100% - 2 * 24px) / 3);
-    }
+.footer-contacts-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height:1.17;
+    letter-spacing: 0.03em;
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
-   
+.footer-logo-text{
+    color:#075b8f;
+}
+.footer-list {
+
+}
+.footer-contacts-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contact-wrapper-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.footer-icoon {
+    fill: #fff;
+    height: 30px;
+    width: 30px; 
+    /* border-radius: 50%;
+    background-color: #4d5ae5; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-bottom: 16px; */
+}
+.footer-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    min-width: 264px;
+    /* text-align: center; */
+    /* margin-bottom: 16px; */
+    display: block;
+}
+.tel-number{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.footer-contacts-content{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    min-width: 264px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.footer-contacts-link {
+    color: #075b8f;
+}
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: #1286ce;
+}

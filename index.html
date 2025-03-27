@@ -32,14 +32,15 @@
                 <svg class="burger-icon" width="24" height="24"><use href="./images/icons.svg#icon-heroicons-solid_menu"></use></svg>
             </button>
         </div>
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu active" data-menu>
             <div class="mobile-menu-container container">
                 <button class="mobile-menu-close" type="button" data-menu-close><svg class="icon-menu-close" width="8" height="8"><use href="./images/icons.svg#icon-close-black"></use></svg></button>
                 <nav class="mobile-menu-navigation">
                     <ul class="mobile-menu-navigation-list">
-                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link active-menu" href="#next-section">O нас</a></li>
-                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link" href="">Услуги</a></li>
-                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link" href="">Контакты</a></li>
+                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link active-menu " href="#next-section">O нас</a></li>
+                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link" href="#section-services">Услуги</a></li>
+                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link" href="#section-advantages">Преимущества</a></li>
+                        <li class="mobile-menu-navigation-item"><a class="mobile-menu-navigation-link" href="#section-contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <address class="mobile-menu-contacts">
@@ -48,17 +49,6 @@
                         <li class="mobile-menu-contacts-item"><a class="mobile-menu-contacts-link active-link" href="tel:+491639857072">+491639857072</a></li>
                         <li class="mobile-menu-contacts-email"><a class="mobile-menu-contacts-link" href="mailto:nikolajbajtemirov657@gmail.com">nikolajbajtemirov657@gmail.com</a></li>
                     </ul>
-                    <!-- <ul class="mobile-menu-icon-list">
-                        <li class="mobile-menu-icon-item">
-                            <a class="mobile-menu-icon-link" href=""><svg class="mobile-icon" width="24" height="24"><use href="./images/icons.svg#icon-instagram-icon"></use></svg></a>
-                        </li>
-                        <li  class="mobile-menu-icon-item">
-                            <a class="mobile-menu-icon-link" href=""><svg class="mobile-icon" width="24" height="24"><use href="./images/icons.svg#icon-twitter-icon"></use></svg></a>
-                        </li>
-                        <li class="mobile-menu-icon-item"><a class="mobile-menu-icon-link" href=""><svg class="mobile-icon" width="24" height="24"><use href="./images/icons.svg#icon-facebook-icon"></use></svg></a>
-                        </li>
-                        <li class="mobile-menu-icon-item"><a class="mobile-menu-icon-link" href=""><svg class="mobile-icon" width="24" height="24"><use href="./images/icons.svg#icon-linkedin-icon"></use></svg></a></li>
-                    </ul> -->
                 </address>
             </div>
         </div>
@@ -71,7 +61,7 @@
                 <a href="#next-section" class="scroll-down"></a>
             </div>
         </section>
-        <section class="about-us" id="next-section">
+        <section class="about-us" id="next-section" >
             <div class="container about-us-container">
                <div class="about-us-case">
                     <h2 class="about-us-title" >О нашей компании</h2>
@@ -80,7 +70,7 @@
                 <img class="picture-about-us" alt="Truck" src="./images/logo-dark-1x.jpg"/>
             </div>
         </section>
-        <section class="section-quality section ">
+        <section class="section-quality section  " id="section-services">
             <div class="container wrapper-quality">
                 <h2 class="title-service">Наши услуги</h2>
                 <div class="section-quality-wrapper">
@@ -124,7 +114,7 @@
                         <li class="section-quality-item item-last">
                             <div class="container-icon"><svg class="quality-item-icon" width="48" height="48"><use href="./images/symbol-defs.svg#icon-paint-format"></use></svg></div>
                             <h3 class="section-quality-subtitle">Малярные работы</h3>
-                            <ul class="list-services-last">
+                            <ul class="list-services">
                                 <li class="list-item-services"><p class="item-text-service">Покраска различных поверхностей</p></li>
                                 <li class="list-item-services"><p class="item-text-service">Восстановление и обновление интерьеров</p></li>
                                 <li class="list-item-services"><p class="item-text-service">Качественные материалы и профессиональный подход</p></li>
@@ -134,188 +124,45 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="section-portfolio section">
-            <div class="container wrapper-portfolio">
-                <h2 class="portfolio-title">Наши услуги</h2>
-                <ul class="portfolio-list">
-                    <li class="portfolio-item">
-                        <div class="portfolio-container-image">
-                            <picture>
-                                <source srcset="
-                                  ./images/office-mobile-1x.jpg,
-                                  ./images/oficce-mobile-2x.jpg 2x"
-                                   media="(max-width: 767px)"
-                                />
-                                <source srcset="
-                                  ./images/img-banking-tablet-1x.jpg 1x,
-                                  ./images/img-banking-tablet-2x.jpg 2x" 
-                                   media="(min-width: 768px)"
-                                />
-                                <source srcset="
-                                  ./images/img-banking-min.jpg 1x,
-                                  ./images/img-banking-min-desktop-2x.jpg 2x"
-                                  media="(min-width: 1158px)"
-                                />
-                                <img class="portfolio-image" src="./images/office-mobile-1x.jpg" alt="Oficce" width="360"/>
-                            </picture>
-                            <p class="portfolio-text-hover"> <ul class="list-services">
-                                <li class="list-item-services"><p class="item-text-service">Бережная упоковка вещей</p></li>
-                                <li class="list-item-services"><p class="item-text-service">Разборка и сборка мебели</p></li>
-                                <li class="list-item-services"><p class="item-text-service">Доставка до нового адреса</p></li>
-                            </ul></p>
-                        </div>
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle">Banking App</h3>
-                            <p class="portfolio-text">App</p>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-container-image">
-                            <picture>
-                                <source srcset="
-                                  ./images/img-payment-mobile-1x.jpg 1x,
-                                  ./images/img-payment-mobile-2x.jpg 2x"
-                                   media="(max-width: 767px)"
-                                />
-                                <source srcset="
-                                  ./images/img-payment-tablet-1x.jpg 1x,
-                                  ./images/img-payment-tablet-2x.jpg 2x" 
-                                   media="(min-width: 768px)"
-                                />
-                                <source srcset="
-                                  ./images/img-payment.jpg 1x,
-                                  ./images/img-payment-desktop-2x.jpg 2x"
-                                  media="(min-width: 1158px)"
-                                />
-                                <img class="portfolio-image" src="./images/img-payment.jpg" alt="Cashless Payment" width="360"/>
-                            </picture>
-                            <p class="portfolio-text-hover">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                            · Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle">Cashless Payment</h3>
-                            <p class="portfolio-text">Marketing</p>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-container-image">
-                            <picture>
-                                <source srcset="
-                                  ./images/img-meditation-mobile-1x.jpg 1x,
-                                  ./images/img-meditation-mobile-2x.jpg 2x"
-                                   media="(max-width: 767px)"
-                                />
-                                <source srcset="
-                                  ./images/img-meditation-tablet-1x.jpg 1x,
-                                  ./images/img-meditation-tablet-2x.jpg 2x" 
-                                   media="(min-width: 768px)"
-                                />
-                                <source srcset="
-                                  ./images/img-meditation.jpg 1x,
-                                  ./images/img-meditation-desktop-2x.jpg 2x"
-                                  media="(min-width: 1158px)"
-                                />
-                                <img class="portfolio-image" src="./images/img-meditation.jpg" alt="Meditation App" width="360"/>
-                            </picture>
-                            <p class="portfolio-text-hover">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                            · Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle">Meditation App</h3>
-                            <p class="portfolio-text">App</p>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-container-image">
-                            <picture>
-                                <source srcset="
-                                  ./images/img-taxi-mobile-1x.jpg 1x,
-                                  ./images/img-taxi-mobile-2x.jpg 2x"
-                                   media="(max-width: 767px)"
-                                />
-                                <source srcset="
-                                  ./images/img-taxi-tablet-1x.jpg 1x,
-                                  ./images/img-taxi-tablet-2x.jpg 2x" 
-                                   media="(min-width: 768px)"
-                                />
-                                <source srcset="
-                                  ./images/img-taxi.jpg 1x,
-                                  ./images/img-taxi-desktop-2x.jpg 2x"
-                                  media="(min-width: 1158px)"
-                                />
-                                <img class="portfolio-image" src="./images/img-taxi.jpg" alt="Taxi Service" width="360"/>
-                            </picture>
-                            <p class="portfolio-text-hover">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                            · Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle">Taxi Service</h3>
-                            <p class="portfolio-text">Marketing</p>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-container-image">
-                            <picture>
-                                <source srcset="
-                                  ./images/img-screen-mobile-1x.jpg 1x,
-                                  ./images/img-screen-mobile-2x.jpg 2x"
-                                   media="(max-width: 767px)"
-                                />
-                                <source srcset="
-                                  ./images/img-screen-tablet-1x.jpg 1x,
-                                  ./images/img-screen-tablet-2x.jpg 2x" 
-                                   media="(min-width: 768px)"
-                                />
-                                <source srcset="
-                                  ./images/img-screen.jpg 1x,
-                                  ./images/img-screen-desktop-2x.jpg 2x"
-                                  media="(min-width: 1158px)"
-                                />
-                                <img class="portfolio-image" src="./images/img-screen.jpg" alt="Screen Illustrations" width="360"/>
-                            </picture>
-                            <p class="portfolio-text-hover">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                            · Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle">Screen Illustrations</h3>
-                            <p class="portfolio-text">Design</p>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-container-image">
-                            <picture>
-                                <source srcset="
-                                  ./images/img-courses-mobile-1x.jpg 1x,
-                                  ./images/img-courses-mobile-2x.jpg 2x"
-                                   media="(max-width: 767px)"
-                                />
-                                <source srcset="
-                                  ./images/img-courses-tablet-1x.jpg 1x,
-                                  ./images/img-courses-tablet-2x.jpg 2x" 
-                                   media="(min-width: 768px)"
-                                />
-                                <source srcset="
-                                  ./images/img-courses.jpg 1x,
-                                  ./images/img-courses-desktop-2x.jpg 2x"
-                                  media="(min-width: 1158px)"
-                                />
-                                <img class="portfolio-image" src="./images/img-courses.jpg" alt="Girl with headphones and phone" width="360"/>
-                            </picture>
-                            <p class="portfolio-text-hover">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                            · Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle">Online Courses</h3>
-                            <p class="portfolio-text">Marketing</p>
-                        </div>
-                    </li>
+        <section class="why-baimayer-section" id="section-advantages">
+           <div class="container">
+                <h2 class="why-title">Почему выбирают <span class="about-us-logo">Bai</span>Mayer?</h2>
+                <ul class="list-why-baimayer">
+                    <li class="item-why-baimayer"><svg class="icon-check" width="32" height="32"><use href="./images/symbol-defs.svg#icon-vector"></use></svg><p class="why-baimayer-text">Опыт и надежность в сфере перевозок</p></li>
+                    <li class="item-why-baimayer"><svg class="icon-check" width="32" height="32"><use href="./images/symbol-defs.svg#icon-vector"></use></svg><p class="why-baimayer-text">Индивидуальный подход к каждому клиенту</p></li>
+                    <li class="item-why-baimayer"><svg class="icon-check" width="32" height="32"><use href="./images/symbol-defs.svg#icon-vector"></use></svg><p class="why-baimayer-text">Прозрачные условия и доступные цены</p></li>
+                </ul>
+               <div class="wrappers">
+                    <div class="containers">
+                        <img src="./images/road-mobile-3.PNG" alt="Road" class="road"/>
+                        <img src="./images/track-mobile.PNG" alt="Truck" class="truck"/>
+                        <div class="location"></div>
+                    </div>
+               </div>
+           </div>
+
+        </section>
+    </main>
+    <footer class="footer" id="section-contacts">
+        <div class="container-footer container">
+            <div class="container-link-logo">
+                <a class="footer-link " href="./index.html">Bai<span class="footer-logo">Mayer<span></a>
+                <p class="footer-text">Свяжитесь с нами, и мы сделаем ваш перезд и траспортировку легкими и комфортными!</p>
+            </div>
+            <div class="footer-container-contacts">
+                <p class="footer-contacts-text">Контакты <span class="footer-logo-text">Bai</span>Mayer</a></p>
+                <ul class="footer-list">
+                    <li class="footer-contacts-item"><div class="contact-wrapper-footer"><svg class="footer-icoon" width="16" heigth="16"><use href="./images/symbol-defs.svg#icon-location"></use></svg><p class="footer-item-text">Наш офис: </p></div><p class="footer-contacts-content">Штутгарт,Германия</p></li>
+                    <li class="footer-contacts-item"><div class="contact-wrapper-footer"><svg class="footer-icoon" width="16" heigth="16"><use href="./images/symbol-defs.svg#icon-phone"></use></svg><p class="footer-item-text">Телефон:</p></div><div class="tel-number"><a class="footer-contacts-link" href="tel:+4917655200818">+4917655200818</a><p class="footer-item-text">Nikolaj- говорит на немецком</p><a class="footer-contacts-link" href="tel:+491639857072">+491639857072</a><p class="footer-item-text">Mark- говорит на русском</p></div></li>
+                    <li class="footer-contacts-item"><div class="contact-wrapper-footer"><svg class="footer-icoon" width="16" heigth="16"><use href="./images/symbol-defs.svg#icon-envelop"></use></svg><p class="footer-item-text">E-mail:</p></div><a class="footer-contacts-link" href="mailto:nikolajbajtemirov657@gmail.com">nikolajbajtemirov657@gmail.com</a></li>
                 </ul>
             </div>
-        </section>  -->
-    </main>
-    <footer></footer>
+        </div>
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/hidden.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
