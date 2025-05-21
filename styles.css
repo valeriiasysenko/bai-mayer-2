@@ -999,9 +999,9 @@ input {
      justify-content: baseline;
     
     }
-   .containers {
+   /* .containers {
      max-width: 340px;
-    }
+    } */
   .why-title {
      font-size: 28px;
      margin-bottom: 58px;
@@ -1023,7 +1023,7 @@ input {
      text-align: left;
    }
    .wrappers {
-     min-width: 150px;
+     max-width: 340px;
    }
 }
 /*----------------------------Dekstop----------------------------------*/
@@ -1033,9 +1033,9 @@ input {
      padding-bottom: 120px;
      max-width: 1158px;
     }
-   .containers {
+   /* .containers {
      max-width: 450px;
-    }
+    } */
   .why-title {
      font-size: 40px;
      margin-bottom: 58px;
@@ -1059,7 +1059,7 @@ input {
      text-align: left;
    }
    .wrappers {
-     /* min-width: 500px; */
+     max-width: 450px;
      margin-left: auto;
    }
 }
@@ -1158,6 +1158,9 @@ input {
     margin-right: auto; */
     /* margin-bottom: 16px; */
 }
+.footer-contacts-title{
+    display: none;
+}
 .footer-item-text {
     font-weight: 400;
     font-size: 16px;
@@ -1217,6 +1220,15 @@ input {
       font-size: 16px;
       margin-bottom: 62px;
     }
+    .footer-contacts-title{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 66px;
+        color: #fff;
+    }
     .footer-contacts-text {
         display: none;
    
@@ -1237,6 +1249,7 @@ input {
      margin-bottom: 12px;
      margin-left: auto;
      margin-right: 0;
+     gap: 8px;
      width: 70%;
     }
     .footer-contacts-link-email{
@@ -1247,12 +1260,8 @@ input {
     .container-link-logo{
         margin-top: 34px;
     }
-   .footer-contacts-title{
-        font-size: 28px;
-        margin-bottom: 46px;
-        margin-right: auto;
-        color: #fff;
-    }
+  
+  
    
 }
 /*----------------------------Dekstop----------------------------------*/
@@ -1279,8 +1288,8 @@ input {
       display: none;
     }
     .footer-contacts-title{
-        font-size: 28px;
-        margin-bottom: 46px;
+        font-size: 30px;
+        margin-bottom: 76px;
         margin-left: auto;
         margin-right: auto; 
         color: #fff;
@@ -1288,12 +1297,60 @@ input {
    .tel-number{
      margin-bottom: 18px;
      width: 70%;
+     gap: 12px;
     }
     .footer-desktop{
         display: flex;
     }
     .container-link-logo{
-        margin-top: 34px;
+        margin-top: 0px;
+        margin-left: 34px;
+        
     }
+    .footer-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-contacts-content{
+        text-align: left;
+        font-size: 20px;
+    }
+    .contact-wrapper-footer{
+        flex-direction: row;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 18px;
+    }
+    .tel-number{
+        text-align: left;
+        margin-right: auto;
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .footer-contacts-item{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        align-self: baseline;
+    }
+    .footer-contacts-link-email{
+        margin-left: 0;
+        margin-right: auto;
+        text-align: left;
+        font-size: 20px;
+    }
+    .container-footer{
+        gap: 46px;
+    }
+   .container-footer{
+    margin-left: 0;
+    margin-right: 0;
+   }
+    .footer-item-text{
+     font-size: 20px;
+    }
+
 
 }
